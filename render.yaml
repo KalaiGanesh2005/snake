@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: flask-screenlog
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    envVars:
+      - key: SENDER_EMAIL
+        value: gneshkalai926@gmail.com
+      - key: RECEIVER_EMAIL
+        value: kalaiganeshramesh44@gmail.com
+      - key: EMAIL_PASSWORD
+        value: yqkrdwbjjvpqioie
